@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D8F1FF;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+a img{
+    width: 120px;
+    height: 48px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh;  */
+}
+
+.encriptar{
+    background-color: transparent;
+    width: 1450px;
+    height: 500px;
+    resize: none;
+    border: none;
+    font-size: 30px;
+}
+
+.encriptar::placeholder{
+    color: #0A3871;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto-informativo{
+    color: grey;
+    margin-top: 250px;
+    margin-left: 400px;
+}
+
+.botones{
+    /* margin-top: 630px; */
+    margin-left: 400px;
+}
+
+#boton-encriptar{
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid #0A3871;
+}
+
+#boton-desencriptar{
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+#boton-encriptar:hover, #boton-desencriptar:hover{
+    background-color: #96b6dd;
+    font-size: 20px;
+    /* transition-duration: 0.5s; */
+}
+
+#boton-encriptar, #boton-desencriptar{
+    width: 375px;
+    height: 50px;
+    margin-right: 100px;
+    margin-left: auto;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+
+
+
+/* * DIV LATERAL DERECHO */
+
+
+.rigth-container{
+    margin-top: 5px;
+    justify-content: left;
+    width: 400px;
+    height: 944px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imagen, .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+#out-text{
+    width: 334px;
+    height: 450px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 63px;
+    top: 10%;
+    font-size: 20px;
+    display: none;
+}
+
+#button{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background-color: white;
+    font-size: 17px;
+}
+
+#button:hover{
+    background-color: #96b6dd;
+    font-size: 20px;
+}
+
+.boton{
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    bottom: 255px;
+    right: 70px;
+    transform: translateX(3000px);
+    transform: translateY(220px);
+    /* *Se coloca display: none; mientras para no mostrar esta opción */
+    display: none;
+}
+
+footer{
+    color: white;
+    background-color: #0A3871;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}

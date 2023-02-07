@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/Spy.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imagenes/Logo.png" alt="logo.alura"></a>
+    </header>
+
+    <main class="main">
+
+        <form id="encriptador-form" onsubmit="return false;">
+
+            <div class="ingreso-texto">
+                <!-- * input -->
+                <textarea id="texto-encriptador" name="encript" class="encriptar" cols="30" rows="10" placeholder="Ingrese la palabra a encriptar" spellcheck="false"></textarea>
+            </div>
+
+            <div class="texto-informativo">
+                <p class="info">&#9888 Sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <!-- * Boton para encriptar -->
+                <input type="submit" value="Encriptar" id="boton-encriptar" onclick="copyText()">
+                <!-- * Boton para desencriptar -->
+                <input type="submit" value="Desencriptar" id="boton-desencriptar" onclick="copyText()">
+            </div>
+
+        </form>
+    </main>
+
+    <!-- * DIV LATERAL DERECHO -->
+
+    <div id="texto-a-mostrar" class="rigth-container">
+
+        <div id="imagen-texto" class="container-2">
+            <div class="imagen">
+                <img src="imagenes/Muñeco.png" alt="muñeco con lupa" id="munecoConLupei">
+            </div>
+            <div class="texto">
+                <h3 id="hChi" class="informacion">Ningún mensaje fue encontrado</h3>
+                <p id="pChi">Ingrese el texto que desea Encriptar o Desencriptar</p>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- * Textarea de salida -->
+
+    <div id="output">
+        <textarea name="salida-texto" id="out-text" cols="30" rows="10" readonly></textarea>
+    </div>
+
+    <div class="boton" id="boton-copiar">
+        <button id="button">Copiar</button>
+    </div>
+
+    <footer> Hecho por Santiago Meneses Correa </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
